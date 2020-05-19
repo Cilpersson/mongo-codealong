@@ -16,7 +16,7 @@ const Book = mongoose.model("Book", {
   author: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Author",
-  },
+  }, 
 });
 
 if (process.env.RESET_DATABASE) {
